@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const generator = require('./utilities/readme-generator');
 
 function userPrompt() {
 
@@ -43,7 +44,7 @@ function userPrompt() {
             type: "list",
             name: "license",
             message: "Select the license for this application",
-            choices: ["Apache","MIT", "Eclipse public","GNU general"]
+            choices: ["Apache","MIT", "Eclipse","GNU","None"]
         },
         {
             type: "input",
@@ -56,7 +57,7 @@ function userPrompt() {
             message: "Enter your email address: "
         }
     ]).then(data => {
-        console.log(data);
+        generator(data);
     });
 }
 
