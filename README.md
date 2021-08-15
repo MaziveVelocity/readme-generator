@@ -58,4 +58,4 @@ Simple applying the application to possible usage to see if it fails or passes.
 
 Email: <cayman.g@hotmail.com>     GitHub: [MaziveVelocity](http://github.com/MaziveVelocity)
     
-    
+    *Current Readme was made with this application
