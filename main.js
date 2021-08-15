@@ -13,6 +13,11 @@ function userPrompt() {
     inquirer.prompt([
         {
             type: "input",
+            name: "fileLocation",
+            message: "Enter file location example:(./{your-input}/README.md): ",
+        },
+        {
+            type: "input",
             name: "title",
             message: "Enter the project title (Required): ",
             validate: titleInput => {
@@ -108,6 +113,7 @@ function userPrompt() {
         }
     ]).then(data => {
         // runs readme-generator and passing data collected. 
+        console.log(data)
         generator(data);
     });
 }

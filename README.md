@@ -1,10 +1,10 @@
 
-# Readme Generator      
+# test      
 
 
 # Description
 
-This application is to add simplicity of the programming process buy cutting out all the extra typing. input some simple things like your application info and your info to automatically generate README file.
+test
 
 
 
@@ -21,13 +21,13 @@ This application is to add simplicity of the programming process buy cutting out
 
 # Installation
 
-Simply go to this application's repository and download files or clone it using your prefered method. Once downloaded go to your termainal and locate the application's location and run "node main" to start the application.
+test
 
 
 
 # Usage 
 
-Once you run the application it will prompt you to input the infromation required for the application. After all information is has been enter the application will automatically create the READMEd file in the directory you ran the applicatin in. You can then move it to the application it applies to.
+test
 
 
 
@@ -44,18 +44,18 @@ litigation. Once the work has other contributors (each a copyright holder), “n
 
 # Contributions
 
-Mazive Velocity (Cayman) is the only contributor of this application
+test
 
 
 
 # Test
 
-Simple applying the application to possible usage to see if it fails or passes.
+test
 
 
 
 # Questions
 
-Email: <cayman.g@hotmail.com>     GitHub: [MaziveVelocity](http://github.com/MaziveVelocity)
+Email: <test>     GitHub: [test](http://github.com/test)
     
-*Current Readme was made with this application*
+    

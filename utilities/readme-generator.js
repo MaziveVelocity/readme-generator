@@ -81,8 +81,10 @@ Email: <${email}>     GitHub: [${username}](http://github.com/${username})
 
 module.exports = gReadme = (data) => {
     // write file function
-    const { title, description, install, usage, contribution, test, license, username, email } = data;
+    const { fileLocation, title, description, install, usage, contribution, test, license, username, email } = data;
     let currentLicense;
+
+    // License data; 
     const licenses = {
         apache: {
             name: "Apache 2.0",
@@ -90,7 +92,10 @@ module.exports = gReadme = (data) => {
             description: `
 The Apache License is a permissive free software license written by the Apache Software Foundation (ASF). It allows users to use the software 
 for any purpose, to distribute it, to modify it, and to distribute modified versions of the software under the terms of the license, without concern for 
-royalties. The ASF and its projects release their software products under the Apache License. The license is also used by many non-ASF projects.`
+royalties. The ASF and its projects release their software products under the Apache License. The license is also used by many non-ASF projects.
+
+[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+`
         },
         eclipse: {
             name: "Eclipse Public License 1.0",
@@ -100,7 +105,10 @@ The Eclipse Public License (EPL) is a free and open source software license most
 other projects by the Eclipse Foundation. It replaces the Common Public License (CPL) and removes certain terms relating to litigations related to patents.
 The Eclipse Public License is designed to be a business-friendly free software license, and features weaker copyleft provisions 
 than licenses such as the GNU General Public License (GPL). The receiver of EPL-licensed programs can use, modify, copy and distribute 
-the work and modified versions, in some cases being obligated to release their own changes.`
+the work and modified versions, in some cases being obligated to release their own changes.
+
+[Eclipse](https://www.eclipse.org/legal/epl-v10.html)
+`
         },
         mit: {
             name: "The MIT License",
@@ -108,7 +116,10 @@ the work and modified versions, in some cases being obligated to release their o
             description: `
 The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT) 
 in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility. 
-The Wikipedia and Wikimedia Commons projects use the alternative name Expat License.`
+The Wikipedia and Wikimedia Commons projects use the alternative name Expat License.
+
+[MIT](https://www.mit.edu/~amini/LICENSE.md)
+`
         },
         gnu: {
             name: "GNU GPL v3",
@@ -118,7 +129,10 @@ The GNU General Public License is a free, copyleft license for software and othe
 The licenses for most software and other practical works are designed to take away your freedom to share and change the works.
 By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a 
 program--to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public 
-License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.`
+License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.
+
+[GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+`
         },
         none: {
             name: "No License",
@@ -131,6 +145,7 @@ litigation. Once the work has other contributors (each a copyright holder), “n
         }
     }
 
+    // checks for which license is selected and then pulls the information.
     switch (license) {
         case "Apache": currentLicense = licenses.apache;
             break;
@@ -144,6 +159,7 @@ litigation. Once the work has other contributors (each a copyright holder), “n
             break;
     }
 
+    // Formats content for README.md File
     var content = `
 # ${title}      ${currentLicense.badge}
 
@@ -164,7 +180,9 @@ ${gTests(test)}
 ${gQuestions(username, email)}
     `;
 
-    fs.writeFile("README.md", content, error => {
+
+    // Writes README.md File
+    fs.writeFile(`./${fileLocation}/README.md`, content, error => {
         if (error) {
             console.error(error)
             return
