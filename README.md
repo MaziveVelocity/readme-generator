@@ -1,16 +1,16 @@
 
-# Readme Generator      [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# Readme Generator      
 
 
-## Description
+# Description
 
 This application is to add simplicity of the programming process buy cutting out all the extra typing. input some simple things like your application info and your info to automatically generate README file.
 
 
 
-## Table of Contents
+# Table of Contents
 
-* [Installation](#installation)
+* [Installation](#installation )
 * [Usage](#usage)
 * [License](#license)
 * [Contributions](#contributions)
@@ -19,41 +19,42 @@ This application is to add simplicity of the programming process buy cutting out
 
 
 
-## Installation
+# Installation
 
-Simply go to this application's repository and download files or clone it using your prefered method. Once downloaded go to your termainal and locate the application's location and run "node main" to start the application
+Simply go to this application's repository and download files or clone it using your prefered method. Once downloaded go to your termainal and locate the application's location and run "node main" to start the application.
 
 
 
-## Usage 
+# Usage 
 
 Once you run the application it will prompt you to input the infromation required for the application. After all information is has been enter the application will automatically create the READMEd file in the directory you ran the applicatin in. You can then move it to the application it applies to.
 
 
 
-## License 
-### (Apache 2.0)
+# License 
+## (No License)
 
 
-The Apache License is a permissive free software license written by the Apache Software Foundation (ASF). It allows users to use the software 
-for any purpose, to distribute it, to modify it, and to distribute modified versions of the software under the terms of the license, without concern for 
-royalties. The ASF and its projects release their software products under the Apache License. The license is also used by many non-ASF projects.
+When you make a creative work (which includes code), the work is under exclusive copyright by default. Unless you include a license
+that specifies otherwise, nobody else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or 
+litigation. Once the work has other contributors (each a copyright holder), “nobody” starts including you.
+            
 
 
 
-## Contributions
+# Contributions
 
 Mazive Velocity (Cayman) is the only contributor of this application
 
 
 
-## Test
+# Test
+
+Simple applying the application to possible usage to see if it fails or passes.
 
 
 
-
-
-## Questions
+# Questions
 
 Email: <cayman.g@hotmail.com>     GitHub: [MaziveVelocity](http://github.com/MaziveVelocity)
     

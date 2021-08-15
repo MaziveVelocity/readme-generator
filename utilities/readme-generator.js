@@ -15,7 +15,7 @@ function gTOC() {
     return `
 # Table of Contents
 
-* [Installation](#installation)
+* [Installation](#installation )
 * [Usage](#usage)
 * [License](#license)
 * [Contributions](#contributions)
@@ -119,6 +119,15 @@ The licenses for most software and other practical works are designed to take aw
 By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a 
 program--to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public 
 License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.`
+        },
+        none: {
+            name: "No License",
+            badge: "",
+            description: `
+When you make a creative work (which includes code), the work is under exclusive copyright by default. Unless you include a license
+that specifies otherwise, nobody else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or 
+litigation. Once the work has other contributors (each a copyright holder), “nobody” starts including you.
+            `
         }
     }
 
@@ -130,6 +139,8 @@ License for most of our software; it applies also to any other work released thi
         case "Eclipse": currentLicense = licenses.eclipse;
             break;
         case "GNU": currentLicense = licenses.gnu;
+            break;
+        case "None": currentLicense = licenses.none;
             break;
     }
 
