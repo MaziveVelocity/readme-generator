@@ -58,7 +58,7 @@ Simply console logs to find out where errors have arrived and why. No formal tes
 
 Email: <cayman.g@hotmail.com>     GitHub: [MaziveVelocity](http://github.com/MaziveVelocity)
 
-# Video Tutroia;
+# Video Tutroial
 
 https://user-images.githubusercontent.com/32405255/129766540-ac5013be-097b-4ef9-92c8-2469d58f212a.mp4
 
