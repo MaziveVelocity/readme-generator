@@ -57,5 +57,5 @@ Simply console logs to find out where errors have arrived and why. No formal tes
 # Questions
 
 Email: <cayman.g@hotmail.com>     GitHub: [MaziveVelocity](http://github.com/MaziveVelocity)
-    
-    
+
+*Made with Readme Generator*
