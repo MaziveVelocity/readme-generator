@@ -45,8 +45,8 @@ ${usage}
 function gLicense(description, name) {
     // generates license section
     return `
-# License 
-## (${name})
+## License 
+### (${name})
 
 ${description}
 `
